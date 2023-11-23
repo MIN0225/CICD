@@ -12,4 +12,11 @@ jobs:
         runs-on: ubuntu-latest
         steps: 
             - run: echo "어쩌고 저쩌고.... ${{ github.repository }}"
+            - uses: actions/checkout@v4
             - uses: actions/setup-node@v4
+              with:
+                  node-version: '18'
+            - name: "Node 설치"
+                run: npm install
+            - name: "Npm 실행"
+                run: node index.js
