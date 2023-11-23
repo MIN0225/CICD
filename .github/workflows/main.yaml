@@ -9,6 +9,7 @@ on:
 
 jobs:
     Job-Gue-Deul:
-        runs-on: ububtu-latest
+        runs-on: ubuntu-latest
         steps: 
             - run: echo "어쩌고 저쩌고.... ${{ github.repository }}"
+            - uses: actions/setup-node@v4
