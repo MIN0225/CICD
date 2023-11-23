@@ -17,6 +17,6 @@ jobs:
               with:
                 node-version: 18
             - name: "Node 설치"
-                run: npm install
+              run: npm install
             - name: "Npm 실행"
-                run: node index.js
+              run: node index.js
